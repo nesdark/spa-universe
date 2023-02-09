@@ -1,0 +1,58 @@
+header {
+  display: flex;
+  align-items: center;
+  gap: 3.27rem;
+
+  padding: 4rem 7.2rem;
+}
+
+header .logo {
+  animation: toRightAndSpin 540ms forwards cubic-bezier(0.18, 0.89, 0.38, 1.5);
+  opacity: 0;
+}
+
+header nav .links {
+  display: flex;
+  gap: 3.2rem;
+}
+
+body.home .links li:nth-child(1) a,
+body.universe .links li:nth-child(2) a,
+body.exploration .links li:nth-child(3) a {
+  transform: scale(1.05);
+  font-weight: 700;
+}
+
+header nav .links a {
+  animation: topToDown 400ms forwards;
+  opacity: 0;
+
+  display: inline-block;
+  font-size: 2.16rem;
+  line-height: 2.2rem;
+
+  color: var(--light-gray);
+
+  cursor: pointer;
+
+  transition: 300ms all linear;
+}
+
+header nav li:nth-child(1) a {
+  animation-delay: 200ms;
+}
+
+header nav li:nth-child(2) a {
+  animation-delay: 300ms;
+}
+
+header nav li:nth-child(3) a {
+  animation-delay: 100ms;
+}
+
+header nav .links a:hover {
+  transform: scale(1.05);
+  font-weight: 700;
+
+  color: var(--white);
+}
